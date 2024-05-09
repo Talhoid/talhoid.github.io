@@ -6,6 +6,10 @@
 		<title>do not the</title>
 	</head>
 	<body>
-		<form onsubmit="location.href = input.value"><input id="input" type="text" /></form>
+		<form
+			onsubmit="(event) => {event.preventDefault();location.href = input.value}"
+		>
+			<input id="input" type="text" /><button type="submit">go</button>
+		</form>
 	</body>
 </html>
