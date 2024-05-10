@@ -7,7 +7,8 @@
 	</head>
 	<body>
 		<input id="input" type="text" /><button
-			onclick="(event) => {location.href = input.value}"
+			type="submit"
+			onclick="(function (window) {window.location = input.value})(window)"
 		>
 			go
 		</button>
